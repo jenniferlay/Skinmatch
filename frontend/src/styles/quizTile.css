@@ -1,0 +1,324 @@
+.quizName{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  padding-top: 8%;
+  min-height: 75vh;
+}
+
+.quizName h1{
+  font-size: 4rem;
+  margin-bottom: 5%;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color:black;
+  text-align: center;
+}
+
+.quizName h3{
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 2%;
+}
+
+.quizName h4{
+  font-size: 1.2rem;
+  margin-bottom: 4%;
+}
+
+.quizName img{
+  width: 50%;
+  margin-bottom: 3%;
+}
+
+.quizName input{
+  width: 40%;
+  padding: 1.5%;
+  font-size: 1.3rem;
+  outline: none;
+  border-radius: 10px;
+  border: 1px rgba(0, 0, 0, 0.5) solid;
+  margin-bottom: 3%;
+}
+
+.hiddenBut{
+  width: 25%;
+  padding: 1%;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hiddenBut:hover{
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.afterChange{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.afterChange:hover{
+  cursor: pointer;
+  color: black;
+  background-color: #867d71;
+}
+
+.skinTileContainer{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+  margin-top: 6%;
+
+}
+
+.skinTile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  background-color: #d3c4b0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.skinTile:hover{
+  background-color: #867d71;
+
+}
+
+.skinTile img{
+  margin-bottom: 10%;
+  width: 30%;
+  height: 90%; 
+}
+
+.skinTile h4{
+  font-size: 1.7rem;
+}
+
+.trueFalseCon{
+  margin-top: 5%;
+  min-height: 55vh;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trueFalseCon button{
+  width: 45%;
+  height: 20vh;
+  border-radius: 20px;
+  border: none;
+  background-color: #d3c4b09d;
+  transition: all 0.3s ease-in-out;
+  font-size: 2rem;
+}
+
+.trueFalseCon button:hover{
+  cursor: pointer;
+  background-color: #d3c4b09d;
+  width: 47%;
+  height: 21vh;
+  color: white;
+}
+
+.concernTiles{
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  margin-bottom: 3%;
+  gap: 20px;
+}
+
+.concernTiles button{
+  height: 25vh;
+}
+
+.afterClickConcern{
+  background-color: rgba(1, 9, 9, 0.5);
+  color: white;
+}
+
+.ageButtons{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-height: 45vh;
+}
+
+.ageButtons button{
+  width: 100%;
+  padding: 2.5%;
+  margin-bottom: 4%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background: #d3c4b047;
+  transition: all 0.2s ease-in-out;
+}
+
+.ageButtons button:hover{
+  cursor: pointer;
+  background-color: #e8ded55f;
+  font-weight: 500;
+}
+
+.backButton{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  width: 5%;
+  cursor: pointer;
+}
+
+.backicon{
+  align-self: center;
+}
+
+.concernTileBut{
+  width: auto;
+}
+
+.concernTileBut img{
+  height: auto;
+}
+
+#concernDes{
+  font-size: 1rem;
+  padding: 3%;
+  background-color: rgba(203, 195, 227, 0.5);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  width: 80%;
+  height: fit-content;
+}
+
+#blueSkin{
+  font-size: 1rem;
+  padding: 3%;
+  background-color: rgba(137, 207, 240, 0.4);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  width: 80%;
+  height: fit-content;
+}
+
+#greenSkin{
+  font-size: 1rem;
+  padding: 3%;
+  background-color: rgba(191, 227, 180, 0.5);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  width: 80%;
+  height: fit-content;
+}
+
+@media(max-width: 768px){
+
+  .quizName{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 20%;  
+  }
+
+  .quizName h1{
+    width: 77%;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+
+  .backButton{
+    width: 15%;
+  }
+
+  .quizName input{
+    margin-bottom: 15%;
+    width: 60%;
+    padding: 3%;
+  }
+
+  .trueFalseCon{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    min-height: 45vh;
+  }
+
+  .trueFalseCon button{
+    width: 100%;
+  }
+
+  .hiddenBut{
+    padding: 3%;
+    width: 60%;
+  }
+
+  .quizName h3{
+    font-size: 2.5rem;
+  }
+
+  .skinTileContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 20px;
+    width: 90%;
+  }
+
+  .skinTile{
+    width: 38vw;
+    padding: 10%;
+    height: 38vw;    
+  }
+
+  .skinTile img{
+    height: auto;
+  }
+
+  .skinTile h4{
+    font-size: 1.3rem;
+  }
+
+  .concernTiles{
+    width: 93%;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    margin-bottom: 10%;
+    margin-top: 3%;
+  }
+
+  .concernTileBut{
+    width: auto;
+    padding: 6%;
+  }
+
+  .concernTileBut img{
+    width: 50%;
+  }
+
+  .margBotConcern{
+    margin-bottom: 10%;
+  }
+
+  .ageButtons{
+    width: 90%;
+  }
+
+  .ageButtons button{
+    padding: 5%;
+  }
+
+}

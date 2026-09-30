@@ -1,0 +1,338 @@
+.dashBoardComp{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.toload{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    align-items: center;
+    width: 100%;
+}
+
+.toload h2{
+    margin-bottom: 20%;
+}
+
+.toshow{
+    display: flex;
+    height: 100%;
+    padding: 1%;
+}
+
+.lefttoshow{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: start;
+    padding: 1%;
+}
+
+.skinmatch-btn{
+    color: #645036;
+}
+.lefttoshow button{
+    padding: 4%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: none;
+    border: none;
+    width: 95%;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.lefttoshow button:hover{
+    cursor: pointer;
+    background-color: #d3c4b0;
+    color: white;
+}
+
+.righttoshow{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border: 2px solid #7e7466;
+    border-style: dashed;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.righttoshow h1{
+    margin-bottom: 2%;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1%;
+}
+
+.righttoshow h2{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+.righttoshow h3{
+    font-size: 4rem;
+    /* margin-bottom: 1%; */
+    padding: 1%;
+}
+
+.topMatches{
+    display: flex;
+    width: 90%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.topMatchTile{
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    width: 30%;
+    min-height: 50vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    border: 0px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.topMatchTile:hover{
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.topMatchTile h1{
+    font-size: 1.3rem;
+    z-index: 1;
+    font-weight: normal;
+}
+
+.topMatchTile svg{
+    z-index: 1;
+}
+
+.topMatchTile h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.matchLabel{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.topMatchTile img{
+    width: 55%;
+    align-self: center;
+    margin-bottom: 4%;
+    z-index: 1;
+}
+
+
+.gridFormatting{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-self: center;
+}
+
+.specTiles{
+    width: 100%;
+    border: 2px solid #7e7466;
+    border-radius: 20px;
+    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.allTiles{
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    border-radius: 5%;
+    border: none;
+    height: 450px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border: 0px solid white;
+}
+
+.allTiles:hover{
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+
+.allTiles img{
+    width: 40%;
+    z-index: 1;
+}
+
+.allTiles h1{
+    font-size: 1.3rem;
+    z-index: 1;
+    font-weight: normal;
+}
+
+.allTiles h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.product-btn{
+    display: flex;
+}
+
+.producticon{
+    width: 10%;
+    margin-right: 5%;
+}
+
+#mobile_selectNav{
+    display: none;
+}
+
+.toShowAfterClick{
+    position: absolute;
+    bottom: 0;
+    height: 0vh;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 3;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topMatchTileclickedTile{
+    height: 50vh;
+}
+
+.allTilesclickedTile{
+    height: 450px;
+}
+
+@media(max-width:768px){
+
+    .dashBoardComp{
+        min-height: 90vh;
+    }
+
+    .toload{
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #mobile_selectNav{
+        display: flex;
+        background-color: white;
+        border-radius: 20px;
+        justify-content: center;
+        color: black;
+    }
+
+    .toshow{
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 5%;
+    }
+
+    .lefttoshow{
+        min-height: 0;
+        width: 47%;
+        height: 3.1rem;
+        overflow: hidden;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        padding: 0;
+        position: absolute;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+    }
+
+    .dropperActive{
+        height: 25rem;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .topMatchTile{
+        width: 90%;
+        align-self: center;
+        margin-bottom: 5%;
+        height: auto;
+    }
+
+    .topMatchTile img{
+        margin-top: 5%;
+    }
+
+    .righttoshow{
+        margin-top: 7rem;
+        z-index: 1;
+        width: auto;
+    }
+
+    .lefttoshow button{
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0.4rem;
+        padding-bottom: 0.9rem;
+    }
+
+    .topMatches{
+        flex-direction: column;
+    }
+
+    .gridFormatting{
+        width: auto;
+        grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+        gap: 10px;
+    }
+
+    .allTiles{
+        min-height: 40vh;
+        height: auto;
+        padding-bottom: 10%;
+        justify-content: flex-end;
+    }
+
+    .allTilesclickedTile{
+        height: 40vh;
+    }
+
+}

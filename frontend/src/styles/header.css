@@ -1,0 +1,106 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #d3c4b0;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+header ul li{
+    margin-left: 4%;
+}
+
+header a{
+    text-decoration: none;
+    color: #3d3020;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+header a:hover{
+    color: #3d3020ad;
+}
+
+.SkinMatch{
+    color: #3d3020;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.hamburgerIcon{
+    display: none;
+    background: none;
+    font-size: 2rem;
+    border: none;
+}
+
+.navBarMobile{
+    display: none;
+}
+
+@media(max-width: 768px){
+
+    header{
+        padding: 5%;
+        align-items: center;
+    }
+
+    .hamburgerIcon{
+        display: flex;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    .navBarMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        background-color: #d3c4b0;
+        overflow: hidden;
+        height: 0;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .navBarMobile li{
+        margin-bottom: 15%;
+    }
+
+    .navBarMobile li a{
+        font-size: 3rem;
+    }
+
+    .navBarMobile a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .showNav{
+        height: 50vh;
+        padding-top: 30%;
+    }
+
+    .textOpac{
+        transform: translateY(-40px);
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .showTextNav{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
